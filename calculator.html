@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator Developed by Venkatesh</title>
+</head>
+<body>
+<table>
+<form name="calculator">
+<input class="textview" style="font-size: 30px" type="text" name="answer">
+</form>
+	<tr>
+	<td><input class="button3"type="button" value=" AC " onclick="calculator.answer.value = ''" /></td>
+	<td><input class="button3" type="button" value=" +/- " onclick="calculator.answer.value=(calculator.answer.value==Math.abs(calculator.answer.value)?-(calculator.answer.value):Math.abs(calculator.answer.value))"/></td>
+	<td><input class="button3" type="button" value=" % " onclick="calculator.answer.value =calculator.answer.value/100 + ' '" /> </td>
+	<td><input class="button2" type="button" value=" ÷ " onclick="calculator.answer.value += '/'" /></td>
+	</tr>
+
+	<tr>
+	<td><input class="button" type="button" value=" 7 " onclick="calculator.answer.value += '7'" /></td>
+	<td><input class="button" type="button" value=" 8 " onclick="calculator.answer.value += '8'" /></td>
+    <td><input class="button" type="button" value=" 9 " onclick="calculator.answer.value += '9'" /></td>
+	<td><input class="button2" type="button" value=" X " onclick="calculator.answer.value += '*'" /></td>
+
+	</tr>
+
+	<tr>
+	<td><input class="button" type="button" value=" 4 " onclick="calculator.answer.value += '4'" /></td>
+	<td><input class="button" type="button" value=" 5 " onclick="calculator.answer.value += '5'" /></td>
+	<td><input class="button" type="button" value=" 6 " onclick="calculator.answer.value += '6'" /></td>
+	<td><input class="button2" type="button" value=" - " onclick="calculator.answer.value += '-'" /></td>
+	</tr>
+
+	<tr>
+	<td><input class="button" type="button" value=" 1 " onclick="calculator.answer.value += '1'" /></td>
+	<td><input class="button" type="button" value=" 2 " onclick="calculator.answer.value += '2'" /></td>
+	<td><input class="button" type="button" value=" 3 " onclick="calculator.answer.value += '3'" /></td>
+	<td><input class="button2" type="button" value=" + " onclick="calculator.answer.value += '+'" /></td>
+	</tr>
+	
+	<tr>
+    <td colspan="2"><input class="button" style="width:201px" type="button" value=" 0 " onclick="calculator.answer.value += '0'" /></td>
+    <td><input  class="button" type="button" value=" . " onclick="calculator.answer.value += '.'" /></td>
+    <td><input class="button2" type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" /></td>
+    </tr>
+   </table>
+
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.button{
+		background-color: #666666fa;
+		width: 100px;
+		height: 100px;
+		font-size: 30px;
+		color:white; 
+		cursor:pointer;
+		border: none;
+		outline: none;
+	}
+	.button2{
+		background-color: #ff9900;
+		width: 100px;
+		height: 100px;
+		font-size: 30px;
+		color:white; 
+		cursor:pointer;
+		border: none;
+		outline: none;
+	}
+	.button3{
+		background-color: #3c3c3c;
+		width: 100px;
+		height: 100px;
+		font-size: 30px;
+		color:white; 
+		cursor:pointer;
+		border: none;
+		outline: none;
+	}
+	.textview{
+		width: 398px;
+		height: 60px;
+		margin: 5px;
+		padding: auto;
+		color:white;
+		background-color:rgba(12, 12, 12, 0.84);
+		border: none;
+		outline: none;
+	}
+	.button:hover{
+	    background-color: #01FF70;
+	}
+	.button2:hover{
+	    background-color: #001f3f;
+	}
+	.button3:hover{
+	    background-color: #001f3f;
+	}
+</style>
+</body>
+</html>
